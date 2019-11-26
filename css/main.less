@@ -1,7 +1,121 @@
-@body-bg: #000;
+@wren-green: #27AE60;
+@bg-white: #FFFFFF;
+@base-black: #000000;
+@grey-grey: #5B5B5B;
 
-.example {
-  background-color: @body-bg;
-  height: 100px;
-  width: 100px;
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img.open-page-wrap {
+  background: url(../images/perogi-new.jpg) no-repeat center;
+  background-size: 1920px 1000.5px;
+  height: 1000.5px;
+  width: 1920px;
+  top: 0;
+  position: absolute;
+  z-index: -1;
+}
+  section.open-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: @bg-white;
+    opacity: 0.9;
+    height: 425px;
+    width: 471px;
+    margin: 199px 0 326px 321px;
+    h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 37px;
+      letter-spacing: 2.3px;
+      width: 411px;
+      height: 87px;
+      margin: 68.5px 30px 25px 30px;
+      color: @base-black;
+    }
+
+    p.opening-text {
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 14px;
+      line-height: 24px;
+      width: 411px;
+      height: 136px;
+      margin: 25px 30px 20px 30px;
+      color: @grey-grey;
+    }
+
+    a {
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+      letter-spacing: .8px;
+      font-size: 12px;
+      text-decoration: none;
+      border: 0.5px solid @base-black;
+      width: 411px;
+      margin: 20px 30px 42.5px 30px;
+      padding: 13px 0;
+      color: @base-black;
+    }
+  }
+
+section.lille-bio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 516px;
+  height: 349px;
+  margin: 151.6px 425px 449.4px 979px;
+
+  h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    line-height: 28px;
+    width: 416px;
+    height: 61px;
+    margin: 46px 50px 25px 50px;
+  }
+
+  p.main-text {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 22px;
+    width: 416px;
+    height: 94px;
+    margin: 25px 50px 123px 50px;
+  }
+}
+
+section.research-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 425px;
+  width: 471px;
+  margin: 251.17px 320px 327px 1129px;
+  text-align: left;
+
+  h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    line-height: 28px;
+    height: 25px;
+    width: 303px;
+    margin: 70.86px 118px 25px 50px;
+  }
+
+  p.research-text {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    width: 371px;
+    height: 204px;
+    margin: 25px 50px 100.14px 50px;
+  }
 }

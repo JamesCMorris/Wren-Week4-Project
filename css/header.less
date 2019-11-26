@@ -1,0 +1,40 @@
+@wren-green: #27AE60;
+@base-black: #222222;
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  .header-logo-wrap {
+    position: relative;
+    height: 80px;
+    top: 0;
+    .header-black-bar, .header-green-bar {
+      height: 40px;
+    }
+    .header-green-bar {
+      background-color: @wren-green;
+      position: fixed;
+      width: 100%;
+    }
+    .header-black-bar {
+      background-color: @base-black;
+      position: fixed;
+      width: 100%;
+      margin-top: 40px;
+    }
+    .header-logo {
+      position: fixed;
+      height: 93.38px;
+      width: 166px;
+      background: url(../images/wren-logo.svg) #27AE60 no-repeat center;
+      background-size: 93.17px 31.45px;
+      top: 36.62px;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+  }
+}
