@@ -8,42 +8,184 @@
   <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap" rel="stylesheet">
   <link rel="stylesheet/less" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css"
+        integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
+  <script src="js/jquery.js"></script>
   <script>less = {env: 'development'};</script>
   <script src="js/less.js"></script>
   <script>less.watch();</script>
+  <script src="js/rellax.js"></script>
   <script src="js/index.js"></script>
 
 </head>
 <body>
-<header>
+<header id="header">
   <div class="header-logo-wrap">
     <div class="header-green-bar"></div>
     <div class="header-black-bar"></div>
     <div class="header-logo"></div>
   </div>
 </header>
-<img class="open-page-wrap" alt="">
+
+<img class="open-page-wrap">
 <section class="open-page">
   <h1>THE FOOD CAPITAL OF EUROPE</h1>
 
   <p class="opening-text">From Polish Perogi to Italian pizzas and all the way to German bratwurst, Europe hosts some of
     the most iconic (and delicious) dishes in the world. But which city is the best? To help you choose the ultimate
     foodie dream destination, we’ve ranked the best European culinary cities based on numerous ranking factors.</p>
-  <a href="#">SEE EUROPE'S FOOD CAPITAL</a>
+  <button id="click">SEE EUROPE'S FOOD CAPITAL</button>
+</section>
+<i id="landing-arrow" class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+
+<section id="table" class="stat-table">
+  <table>
+    <thead>
+    <tr>
+      <th>CITY, COUNTRY</th>
+      <th>RESTAURANT PRICE INDEX</th>
+      <th>WINE PRICE</th>
+      <th>BEER PRICE</th>
+      <th>CUISINE RANKING</th>
+      <th>MICHELIN STARS</th>
+      <th>INDEX</th>
+      <th>RANKING</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td class="location">Lille, France</td>
+      <td>64.28</td>
+      <td>3.44</td>
+      <td>1.29</td>
+      <td>2</td>
+      <td>613</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td class="location">Lyon, France</td>
+      <td>72.80</td>
+      <td>5.60</td>
+      <td>1.35</td>
+      <td>2</td>
+      <td>613</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td class="location">Toulouse, France</td>
+      <td>72.88</td>
+      <td>5.17</td>
+      <td>1.36</td>
+      <td>2</td>
+      <td>613</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td class="location">Montpellier, France</td>
+      <td>72.64</td>
+      <td>5.17</td>
+      <td>1.55</td>
+      <td>2</td>
+      <td>613</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td class="location">Paris, France</td>
+      <td>86.37</td>
+      <td>6.89</td>
+      <td>1.5</td>
+      <td>2</td>
+      <td>613</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td class="location">Naples, Italy</td>
+      <td>54.95</td>
+      <td>4.30</td>
+      <td>1.17</td>
+      <td>1</td>
+      <td>364</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td class="location">Aachen, Germany</td>
+      <td>48.97</td>
+      <td>4.30</td>
+      <td>0.7</td>
+      <td>5</td>
+      <td>304</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td class="location">Leipzig, Germany</td>
+      <td>55.92</td>
+      <td>4.30</td>
+      <td>0.66</td>
+      <td>5</td>
+      <td>304</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td class="location">Berlin, Germany</td>
+      <td>56.04</td>
+      <td>4.30</td>
+      <td>0.71</td>
+      <td>5</td>
+      <td>304</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td class="location">Dresden, Germany</td>
+      <td>56.40</td>
+      <td>4.30</td>
+      <td>0.7</td>
+      <td>5</td>
+      <td>304</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    </tbody>
+  </table>
+  <i id="table-arrow" class="fa fa-chevron-circle-down" aria-hidden="true"></i>
 </section>
 
+<img class="lille-street-back">
+<section id="lille" class="lille-page-wrap" >
+  <section class="lille-page-left">
+    <img class="pastries-image" class="rellax" data-rellax-speed="8">
+    <img src="images/cheese-board-new.jpg" class="cheese-board-image">
+  </section>
+  <section class="lille-page-right">
 
-<section class="lille-bio">
-  <h2>LILLE, FRANCE TAKES THE TOP SPOT AS THE FOOD CAPITAL OF EUROPE</h2>
+    <section class="lille-bio">
+      <h2>LILLE, FRANCE TAKES THE TOP SPOT AS THE FOOD CAPITAL OF EUROPE</h2>
 
-  <p class="main-text">Often said to be France’s most underrated city, the northern Capital of Lille boasts a vibrant
-    cultural
-    scene, including the largest outdoor flea market in Europe. Lille now also comes out on top for dining out. Time
-    to
-    book some flights!</p>
+      <p class="main-text">Often said to be France’s most underrated city, the northern Capital of Lille boasts a
+        vibrant
+        cultural
+        scene, including the largest outdoor flea market in Europe. Lille now also comes out on top for dining out. Time
+        to
+        book some flights!</p>
+    </section>
+    <img src="images/lille-buildings-new.jpg" class="lille-buildings-image" alt="Lille Buildings">
+
+  </section>
+
 </section>
+<i id="main-arrow" class="fa fa-chevron-circle-down" aria-hidden="true"></i>
 
-<section class="research-page">
+
+<img class="research-page-back">
+<section id="research" class="research-page">
   <h2>SUMMARY OF RESEARCH</h2>
   <p class="research-text">The index is comprised of 171 cities, using weighted metrics of Michelin stars per area,
     restaurant price,
@@ -51,7 +193,9 @@
     whopping 613 Michelin stars. Liverpool is rated the food capital of the UK, ranked 104<sup>th</sup>, followed by
     Cardiff,
     ranked 106<sup>th</sup> out of 171 cities.</p>
+
 </section>
+<i id="footer-arrow" class="fa fa-chevron-circle-up" aria-hidden="true"></i>
 
 <!--<section class="sources-popup pop">
   <ul class="accordion">
