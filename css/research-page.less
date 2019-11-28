@@ -1,0 +1,155 @@
+section.research-wrap {
+  display: flex;
+}
+
+section.research-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: @bg-white;
+  opacity: 0.8;
+  height: 375px;
+  width: 471px;
+  margin: 350px 320px 20px 1129px;
+  text-align: left;
+  h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    line-height: 28px;
+    height: 25px;
+    width: 303px;
+    margin: 70.86px 118px 25px 50px;
+  }
+  p.research-text {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    width: 371px;
+    height: 204px;
+    margin: 25px 50px 100.14px 50px;
+  }
+}
+
+#footer-arrow {
+  font-size: 5em;
+  position: absolute;
+  width: 70px;
+  left: 50%;
+  margin: 10px 0 30px -35px;
+
+}
+
+section.sources {
+  details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 471px;
+    background-color: @bg-white;
+    font-family: 'Ubuntu', sans-serif;
+    opacity: .8;
+    padding: 20px 0;
+    margin: 0 320px 0 1129px;
+
+    summary {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 300;
+      margin: 0 50px;
+      text-decoration: none;
+    }
+
+    p {
+      margin: 20px 50px;
+    }
+
+    ul {
+      margin: 0 50px 0 10px;
+      list-style: none;
+
+      li {
+        padding-bottom: 4px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+    section.research-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: @bg-white;
+    opacity: 0.8;
+    height: 326px;
+    width: 250px;
+    margin: 290px auto 0 auto;
+    text-align: left;
+    h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 16px;
+      line-height: 20px;
+      height: 40px;
+      width: 199px;
+      margin: 0px 26px 8px 26px;
+    }
+    p.research-text {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 12px;
+      font-weight: 300;
+      line-height: 16px;
+      width: 203px;
+      height: 201px;
+      margin: 0 0;
+    }
+  }
+  #footer-arrow {
+    font-size: 5em;
+    position: absolute;
+    width: 70px;
+    left: 50%;
+    margin: 10px 0 30px -35px;
+  }
+  section.sources {
+    details {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 250px;
+      background-color: @bg-white;
+      font-family: 'Ubuntu', sans-serif;
+      opacity: .8;
+      padding: 6px 0;
+      margin: 0 auto 0 auto;
+      summary {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        margin: 0 50px;
+        text-decoration: none;
+      }
+      p {
+        margin: 20px 26px;
+        font-size: 12px;
+      }
+      ul {
+        margin: 0 26px 0 -15px;
+        list-style: none;
+        li {
+          padding-bottom: 7px;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  #footer-arrow {
+    font-size: 2.7em;
+    position: absolute;
+    width: 70px;
+    left: 50%;
+    margin: 190px 0 32px -18px;
+  }
+}

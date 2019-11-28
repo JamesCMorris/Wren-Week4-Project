@@ -1,0 +1,121 @@
+section.open-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: @bg-white;
+  opacity: 0.9;
+  height: 425px;
+  width: 471px;
+  margin: 199px 0 326px 321px;
+
+  h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 37px;
+    letter-spacing: 2.3px;
+    width: 411px;
+    height: 87px;
+    margin: 68.5px 30px 25px 30px;
+    color: @base-black;
+  }
+
+  p.opening-text {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    width: 411px;
+    height: 136px;
+    margin: 25px 30px 20px 30px;
+    color: @grey-grey;
+  }
+
+  button {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: .8px;
+    font-size: 12px;
+    text-decoration: none;
+    border: 0.5px solid @base-black;
+    width: 411px;
+    margin: 20px 30px 42.5px 30px;
+    padding: 13px 0;
+    color: @base-black;
+    background-color: @bg-white;
+  }
+
+  button:hover {
+    background-color: @base-black;
+    color: @bg-white;
+  }
+}
+
+#landing-arrow {
+  font-size: 5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -120px;
+}
+
+@media screen and (max-width: 320px) {
+  section.open-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: @bg-white;
+    opacity: 0.9;
+    height: 340px;
+    width: 270px;
+    margin: 100px 25px 190px 25px;
+
+    h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 20px;
+      line-spacing: 26px;
+      letter-spacing: .65px;
+      width: 213px;
+      height: 50px;
+      margin: 25px 28px 14px 28px;
+      color: @base-black;
+    }
+
+    p.opening-text {
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 12px;
+      line-height: 16px;
+      width: 213px;
+      height: 159px;
+      margin: 14px 28px 19px 30px;
+      color: @grey-grey;
+    }
+
+    button {
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+      letter-spacing: .67px;
+      font-size: 10px;
+      line-height: 13px;
+      text-decoration: none;
+      border: 0.5px solid @base-black;
+      width: 213px;
+      margin: 19px 28px 39px 28px;
+      padding: 7px 0;
+      color: @base-black;
+      background-color: @bg-white;
+    }
+
+    button:hover {
+      background-color: @base-black;
+      color: @bg-white;
+    }
+  }
+
+  #landing-arrow {
+    font-size: 2.7em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -60px;
+  }
+}

@@ -1,0 +1,118 @@
+section.lille-page-wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: -30px;
+  section.lille-page-left {
+    display: flex;
+    flex: 49%;
+    margin-top: 300px;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: .5%;
+  }
+  section.lille-page-right {
+    display: flex;
+    flex: 49%;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: .5%;
+    margin-top: 250px;
+    .lille-bio {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 516px;
+      height: 349px;
+      background-color: @bg-white;
+      opacity: .9;
+      h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 22px;
+        line-height: 28px;
+        width: 416px;
+        height: 61px;
+        margin: 46px 50px 25px 50px;
+      }
+      p.main-text {
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 22px;
+        width: 416px;
+        height: 94px;
+        margin: 25px 50px 123px 50px;
+      }
+    }
+  }
+}
+#main-arrow {
+  font-size: 5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+@media screen and (max-width: 320px) {
+  section.lille-page-wrap {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-top: -30px;
+
+    section.lille-page-left {
+      display: flex;
+      margin-top: 0;
+      margin-right: 0;
+      flex-direction: row;
+      align-items: flex-end;
+    }
+
+    section.lille-page-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      margin-top: 335px;
+
+      .lille-bio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 250px;
+        height: 276px;
+        background-color: @bg-white;
+        opacity: .9;
+
+        h2 {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 16px;
+          line-height: 20px;
+          width: 199px;
+          height: 80px;
+          margin: 25px 24px 10px 24px;
+        }
+
+        p.main-text {
+          font-family: 'Ubuntu', sans-serif;
+          font-weight: 300;
+          font-size: 12px;
+          line-height: 16px;
+          width: 203px;
+          height: 131px;
+          margin: 10px 24px 30px 24px;
+        }
+      }
+    }
+  }
+  #main-arrow {
+    font-size: 2.7em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+}

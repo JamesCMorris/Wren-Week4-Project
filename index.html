@@ -10,14 +10,8 @@
   <link rel="stylesheet/less" type="text/css" href="css/styles.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css"
         integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
-  <script src="js/jquery.js"></script>
-  <script>less = {env: 'development'};</script>
-  <script src="js/less.js"></script>
-  <script>less.watch();</script>
-  <script src="js/rellax.js"></script>
-  <script src="js/index.js"></script>
-
 </head>
+
 <body>
 <header id="header">
   <div class="header-logo-wrap">
@@ -37,6 +31,10 @@
   <button id="click">SEE EUROPE'S FOOD CAPITAL</button>
 </section>
 <i id="landing-arrow" class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+<section class="social">
+  <a class="facebook" href="#"></a>
+  <a class="twitter" href="#"></a>
+</section>
 
 <section id="table" class="stat-table">
   <table>
@@ -155,17 +153,16 @@
     </tr>
     </tbody>
   </table>
-  <i id="table-arrow" class="fa fa-chevron-circle-down" aria-hidden="true"></i>
 </section>
+<i id="table-arrow" class="fa fa-chevron-circle-down" aria-hidden="true"></i>
 
 <img class="lille-street-back">
-<section id="lille" class="lille-page-wrap" >
+<section id="lille" class="lille-page-wrap rellax" data-rellax-speed="2">
   <section class="lille-page-left">
-    <img class="pastries-image" class="rellax" data-rellax-speed="8">
+    <img class="pastries-image">
     <img src="images/cheese-board-new.jpg" class="cheese-board-image">
   </section>
   <section class="lille-page-right">
-
     <section class="lille-bio">
       <h2>LILLE, FRANCE TAKES THE TOP SPOT AS THE FOOD CAPITAL OF EUROPE</h2>
 
@@ -177,14 +174,12 @@
         book some flights!</p>
     </section>
     <img src="images/lille-buildings-new.jpg" class="lille-buildings-image" alt="Lille Buildings">
-
   </section>
-
 </section>
 <i id="main-arrow" class="fa fa-chevron-circle-down" aria-hidden="true"></i>
 
-
 <img class="research-page-back">
+
 <section id="research" class="research-page">
   <h2>SUMMARY OF RESEARCH</h2>
   <p class="research-text">The index is comprised of 171 cities, using weighted metrics of Michelin stars per area,
@@ -193,43 +188,56 @@
     whopping 613 Michelin stars. Liverpool is rated the food capital of the UK, ranked 104<sup>th</sup>, followed by
     Cardiff,
     ranked 106<sup>th</sup> out of 171 cities.</p>
-
 </section>
-<i id="footer-arrow" class="fa fa-chevron-circle-up" aria-hidden="true"></i>
+<section class="sources">
+  <details>
+    <summary>Sources</summary>
+    <p>To calculate the index we first normalised the data categories individually from 0 to 1 and then summed the
+      results.
 
-<!--<section class="sources-popup pop">
-  <ul class="accordion">
-    <li>
-      <a class="toggle" href="javascript:void(0)">Sources</a>
-      <ul class="inner">
-        <li>
-          <a target="_blank" href="https://www.numbeo.com/cost-of-living/region_rankings.jsp?title=2019-mid&region=150">Restaurant
-            price
-            index – The higher index would be weighted closer to 0</a>
-        </li>
-        <li>
-          <a target="_blank"
-             href="https://www.numbeo.com/cost-of-living/prices_by_country.jsp?itemId=14&displayCurrency=GBP">Wine price
-            -
-            The higher cost is weighted closer to 0</a>
-        </li>
-        <li>
-          <a target="_blank"
-             href="https://www.numbeo.com/cost-of-living/prices_by_country.jsp?itemId=5&displayCurrency=GBP">Beer price
-            – as
-            with Wine price</a>
-        </li>
-        <li>
-          <a target="_blank" href="https://guide.michelin.com/en/restaurants">Michelin stars – The more stars the closer
-            to 1</a></li>
-        <li>
-          <a target="_blank" href="https://www.thrillist.com/eat/nation/the-best-places-to-eat-and-drink-in-europe">Cuisine
-            ranking – The
-            higher ranking is weighted closer to 0</a>
-        </li>
-      </ul>
-    </li>
-  </ul>
-</section>-->
+      On this scale, for</p>
+    <ul>
+      <li>
+        <a target="_blank"
+           href="https://www.numbeo.com/cost-of-living/region_rankings.jsp?title=2019-mid&region=150">Restaurant
+          price
+          index – The higher index would be weighted closer to 0</a>
+      </li>
+      <li>
+        <a target="_blank"
+           href="https://www.numbeo.com/cost-of-living/prices_by_country.jsp?itemId=14&displayCurrency=GBP">Wine
+          price
+          -
+          The higher cost is weighted closer to 0</a>
+      </li>
+      <li>
+        <a target="_blank"
+           href="https://www.numbeo.com/cost-of-living/prices_by_country.jsp?itemId=5&displayCurrency=GBP">Beer
+          price
+          – as
+          with Wine price</a>
+      </li>
+      <li>
+        <a target="_blank" href="https://guide.michelin.com/en/restaurants">Michelin stars – The more stars the
+          closer
+          to 1</a></li>
+      <li>
+        <a target="_blank" href="https://www.thrillist.com/eat/nation/the-best-places-to-eat-and-drink-in-europe">Cuisine
+          ranking – The
+          higher ranking is weighted closer to 0</a>
+      </li>
+    </ul>
+  </details>
+</section>
+
+<i id="footer-arrow" class="fa fa-chevron-circle-up" aria-hidden="true"></i>
 </body>
+
+<script src="js/jquery.js"></script>
+<script src="js/rellax.min.js"></script>
+<script>less = {env: 'development'};</script>
+<script src="js/less.js"></script>
+<script>less.watch();</script>
+<!--<script src="../js/rellax.js"></script>-->
+<script src="js/index.js"></script>
 </html>

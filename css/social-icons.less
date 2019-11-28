@@ -1,0 +1,51 @@
+section.social {
+  display: flex;
+  flex-direction: row-reverse;
+  color: #27AE60;
+  position: fixed;
+  margin-top: -100px;
+  margin-left: 100px;
+
+  a.facebook {
+    background: url(../images/facebook.svg);
+    background-size: 40px 40px;
+    height: 40px;
+    width: 40px;
+    margin: 20px;
+  }
+
+  a.twitter {
+    background: url(../images/twitter.svg);
+    background-size: 40px 40px;
+    height: 40px;
+    width: 40px;
+    margin: 20px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  section.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    color: #27AE60;
+    position: absolute;
+
+
+    a.facebook {
+      background: url(../images/facebook.svg);
+      background-size: 25px 25px;
+      height: 25px;
+      width: 25px;
+    }
+
+    a.twitter {
+      background: url(../images/twitter.svg);
+      background-size: 25px 25px;
+      height: 25px;
+      width: 25px;
+    }
+  }
+}

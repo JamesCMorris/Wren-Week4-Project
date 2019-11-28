@@ -20,7 +20,7 @@ img.research-page-back {
   width: 1920px;
   position: absolute;
   z-index: -1;
-  top: 3000px;
+  top: 3200px;
 }
 
 img.lille-street-back {
@@ -40,19 +40,77 @@ img.pastries-image {
   height: 404px;
   border: 7px solid @bg-white;
   transform: rotate(270deg);
-  margin-right: 20px;
+  margin-right: 25px;
 }
 
 img.cheese-board-image {
   height: 232px;
   width: 252px;
   border: 7px solid @bg-white;
-  margin-top: 15px;
+  margin-top: -10px;
 }
 
 img.lille-buildings-image {
   height: 323px;
   width: 391px;
   border: 7px solid @bg-white;
-  margin-top: 40px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 320px) {
+
+  img.open-page-wrap {
+    background: url(../images/perogi-mobile.jpg) no-repeat center;
+    background-size: 320px 667px;
+    width: 320px;
+    height: 667px;
+    top: 37px;
+    position: absolute;
+    z-index: -1;
+  }
+
+  img.lille-street-back {
+    background: url(../images/lille-street-mobile.jpg) no-repeat center;
+    background-size: 320px 215px;
+    height: 215px;
+    width: 320px;
+    position: absolute;
+    z-index: -1;
+    margin-top: 120px;
+  }
+  img.pastries-image {
+    background: url(../images/strudel-new.jpg) no-repeat center;
+    background-size: 170px 148px;
+    width: 170px;
+    height: 148px;
+    border: 3px solid @bg-white;
+    transform: rotate(270deg);
+    margin: -80px 0 0 -60px;
+  }
+
+  img.cheese-board-image {
+    height: 91px;
+    width: 100px;
+    border: 3px solid @bg-white;
+    margin: 5px 0 0 -11px;
+  }
+
+  img.lille-buildings-image {
+    height: 127px;
+    width: 151px;
+    border: 3px solid @bg-white;
+    margin: -25px -30px 0 0;
+    z-index: 10
+
+  }
+
+  img.research-page-back {
+    background: url(../images/breakfast-mobile.jpg) no-repeat center;
+    background-size: 320px 214px;
+    height: 214px;
+    width: 320px;
+    position: absolute;
+    z-index: -1;
+    top: 2490px;
+  }
 }
